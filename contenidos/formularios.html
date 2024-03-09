@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Estructura del Formulario</h1>
+    <p> < form ></p>
+    <h2> Atributos </h2>
+    <p> 
+        <strong>input: </strong> nos sirve para crear diferentes tipos de control de valor. Entrada que se espera.
+        <br>
+        <strong> type: </strong>el tipo de atributo que tendrá la Entrada.
+        <br>
+        <strong>name: </strong> el nombre de la entrada.
+        <br>
+        <strong>size:</strong> tamaño el cual designa cuantos valores serán mostrados
+        <br>
+        <strong>maxsize:</strong> el tamaño de la entrada, valores máximos a recibir.
+    </p>
+
+    <ul>
+        <li>
+            <strong>Variables para input type</strong>
+            <ul>
+                <li>text</li>
+                <li>password</li>
+                <li>radio</li>
+                <li>checkbox</li>
+                <li>submit</li>
+                <li>reset</li>
+                <li>file</li>
+                <li>hidden</li>
+                <li>image</li>
+                <li>button</li>
+        </li>
+    </ul>
+
+    <h2> Ejemplos </h2>
+    <form action="">
+        <p>Username:
+        <input type="text" name="username" size="15" maxlength="10" />
+        </p>
+        <p>Password: <input type="password" name="password" size="10" maxlength="10" />
+        </p>
+    </form>
+    <h2> Comentarios</h2>
+    <p>Escriba un comentario</p>
+    <textarea name="password" rows="5" cols="30">Escriba aquí su comentario</textarea>
+
+    <h2> boton de radio</h2>
+    <form action="">
+        <p> Escoger su sexo:</p>
+        <input type="radio" name="sexo" value="hombre" checked> Hombre
+        <input type="radio" name="sexo" value="mujer" =""> Mujer
+    </form>
+
+    <h2> Selección </h2>
+    <form action="">
+        <p> Escoger su país:</p>
+        <br/>
+        <input type="checkbox" name="service" value="spotify" checked/> Spotify
+        <input type="checkbox" name="service" value="apple music" /> Apple Music
+    </form>
+
+    <h2> Lista de valores</h2>
+    <form action="http://www.example.com/profile.php">
+        <p>En que dispositivo escuchas música</p>
+            <select name="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+            </select>
+        </form>
+    <h2>Multiple Selección</h2>
+        <form action="">
+            <p>Seleccione</p>
+            <select name="instrumentos" size="3" multiple="multiple">
+                <option value="guitarra" selected> Guitarra</option>
+                <option value="bateria" > Batería</option>
+                <option value="bajo" selected> Bajo</option>
+                </select>
+        </form>
+    
+    <h2>Botones de entrada</h2>
+    <form action="">
+        <h3>botón de envíar</h3>
+        <input type="text" name="email" placeholder="Escriba su email" />
+        <input type="submit" value="Enviar"></form>
+    </form>
+    <form action="" method="post">
+        <h3>botón de upload</h3>
+        <input type="file" name="name-song" />	<br />
+        <input type="reset" value="Borrar" />
+    </form>
+    <h2> Un botón como imagen</h2>
+    <form action="">
+        <input type="text" name="usuario" value="Escriba su usuario" /> 
+        <br>
+        <input type="image" src="images/enviar.jpg" width="50" height="30" alt="boton de enviar" />
+    </form>
+    <h2> Imagen en boton y controles ocultos</h2>
+    <form action="">
+        <button>
+            <img src="images/phone.jpg" alt="phone" width="10" height="10" /> Phone
+        </button>
+        <input type="hidden" name="phone" value="1234567890" />
+    </form>
+    <hr>
+    <form action="formularios2.html">
+        <button>
+            <img src="images/navegar.jpg" alt="navegar" width="10" height="10" /> Continuación de formularios
+        </button>
+    </form>
+</body>
+</html>

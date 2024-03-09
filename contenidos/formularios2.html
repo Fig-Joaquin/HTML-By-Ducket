@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1> Uso del Label </h1>
+    <p>Es importante el uso del label para las personas no videntes.</p> <br>
+    
+    <h3> El atributo <em>for</em></h3>
+    <p>El atributo for indica a qué control de formulario pertenece la etiqueta. </p>
+    <h2>Ejemplo</h2>
+
+    <label>Age: <input type="text" name="age" /></label>
+    <br/ >
+    Gender:
+    <input id="female" type="radio" name="gender" value="f">
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="male">Male</label>
+
+    <h2>Agrupando los elementos del formulario</h2>
+    <p><strong>Uso del fieldset</strong></p>
+    <p>Se utiliza para agrupar los controles del formulario.</p>
+    <p><strong>legend</strong></p>
+    <p>Se utiliza para identificar el propóposito del formulario</p>
+
+    <h2>Ejemplo</h2>
+    <fieldset>
+        <legend>Contact details</legend>
+        <label>Email:<br />
+        <input type="text" name="email" /></label><br />
+        <label>Mobile:<br />
+        <input type="text" name="mobile" /></label><br />
+        <label>Telephone:<br />
+        <input type="text" name="telephone" /></label>
+        </fieldset>
+
+        <h2>Validación en los formularios</h2>
+        <form action="">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required></title><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>La Fecha como entrada</h2>
+        <form action="">
+            <label for="bday">Fecha de nacimiento:</label>
+            <input type="date" name="bday">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>Uso de la entrada tipo Email y Url</h2>
+        <form action="">
+            <label for="email">Introduzca su email:</label>
+            <input type="email" name="email"> <br>
+            <label for="url">Introduzca su url:</label>
+            <input type="url" name="url"><br>
+            <input type="submit" name="Enviar" >
+        </form>
+
+        <h2>Busqueda</h2>
+        <form action="formularios.html">
+            <label for="search">Buscar:</label>
+            <input type="search" name="search" placeholder="Busqueda">
+            <input type="submit" value="Enviar">
+        </form>
+        <h2>Ejemplo de un formulario</h2>
+        <form action="ejemploformulario.html">
+            
+            <button>
+                Siguiente
+            </button>
+        </form>
+</body>
+</html>

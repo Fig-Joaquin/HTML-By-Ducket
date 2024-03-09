@@ -6,6 +6,103 @@
     <title>Tablas</title>
 </head>
 <body>
+    <h1> Estructura básica de la Tabla</h1>
+
+    <h3> < th > </table></h2>
+    <p>
+        < th > Sirve para crear la tabla. El contenido se escribe fila por fila
+    </p>
+
+    <h3> < tr > </tr></h2>
+    <p>
+        Indica el comienzo de cada fila de la tabla
+    </p>
+    
+    <h3> < td > </h2>
+    <p>
+        Cada celda de la tabla es representada por el uso del < td >
+    </p>
+
+    <h3> < th ></h3>
+    <p> El < th> elemento se usa igual que el < td> elemento, pero su propósito es representar el encabezado de una columna o una fila.</p>
+    
+    <h2> Uso de tablas largas</h2>
+    <h3> < thead></h3>
+    <p>
+        Los encabezados de la tabla deben estar dentro del < thead> elemento
+    </p>
+
+    <h3> < tbody ></h3>
+    <p>
+        The body should sit inside the 
+< tbody> element.
+    </p>
+
+    <h3> < tfoot ></h3>
+    <p>
+        The footer belongs inside the 
+< tfoot > element
+    </p>
+    <h2> Primer Ejemplo</h2>
+    <!-- Ejemplod e una tabla matriz 3x3 -->
+    <table>
+        <tr>
+            <td> 1</td>
+            <td> 2</td>
+            <td> 3</td>
+        </tr>
+        <tr>
+            <td> 4</td>
+            <td> 5</td>
+            <td> 6</td>
+        </tr>
+        <tr>
+            <td> 7</td>
+            <td> 8</td>
+            <td> 9</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2>Segundo Ejemplo</h2>
+    <table>
+        <tr>
+            <td> 1</td>
+            <td> 4</td>
+            <td> 7</td>
+        </tr>
+        <tr>
+            <td> 2</td>
+            <td> 5</td>
+            <td> 8</td>
+        </tr>
+        <tr>
+            <td> 3</td>
+            <td> 6</td>
+            <td> 9</td>
+        </tr>
+    </table>
+    
+    <h2> Tercer Ejemplo</h2>
+    <!--tercer ejemplo-->
+    <table>
+        <caption>Entradas de cine</caption>
+        <tr>
+            <th id="dias"></th>
+            <th scope="col">Lunes</th>
+            <th scope="col">Martes</th>
+        </tr>
+        <tr>
+            <th scope="row">Entradas vendidas</th>
+            <td> 120</td>
+            <td> 135</td>
+        </tr>
+        <tr>
+            <th scope="row">Ganancias</th>
+            <td> $600</td>
+            <td> $675</td>
+        </tr>
+    </table>
     
 </body>
 </html>
