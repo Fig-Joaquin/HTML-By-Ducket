@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texto</title>
     <link rel="stylesheet" href="css/texto-css.css">
+    
 </head>
 <body>
     <h1>Texto en el CSS</h1>
-    <h2>Tipografías</h2>
+    <h2>Indice</h2>
+    <div>
+        <ol >
+            <li class="li-tabla-indice"><a href="#seccion1">Tipografías</a></li>
+            <li class="li-tabla-indice"><a href="#seccion2">Tamaños del tipo de fuente</a></li>
+            <li class="li-tabla-indice"><a href="#seccion3"> Peso de la fuente</a></li>
+            <li class="li-tabla-indice"><a href="#seccion4"> Estilo de la fuente</a></li>
+            <li class="li-tabla-indice"><a href="#seccion5">Mayúsculas y Minúsculas</a></li>
+            <li class="li-tabla-indice"><a href="#seccion6"> Subrayado y Tachado</a></li>
+            <li class="li-tabla-indice"><a href="#seccion7"> Interlineado</a></li>
+            <li class="li-tabla-indice"><a href="#seccion8">Espaciado entre letras y palabras</a></li>
+            <li class="li-tabla-indice"><a href="#seccion9">Alineación</a></li>
+            <li class="li-tabla-indice"><a href="#seccion10"> Alineación Vertical</a></li>
+            <li class="li-tabla-indice"><a href="#seccion11"> Sangría de Texto</a></li>
+            <li class="li-tabla-indice"><a href="#seccion12"> Sombreado</a></li>
+            <li class="li-tabla-indice"><a href="#seccion13"> Primera letra o línea</a></li>
+            
+        </ol>
+    </div>
+    
+
+    <h2 id="seccion1">Tipografías</h2>
     <div class="tipo-serif">
         <p>Fuente Serif</p>
     </div>
@@ -68,7 +90,7 @@
         <p>Monotype Cursiva</p>
     </div>
 
-    <h2>Tamaños del tipo de fuente</h2>
+    <h2 id="seccion2">Tamaños del tipo de fuente</h2>
 
     <div class="fuente">
         <p>La propiedad font-size permite especificar un tamaño para la fuente. <br> 
@@ -83,7 +105,7 @@
     </div>
 
     <div class="fuente">
-        <h2>Peso de la fuente</h2>
+        <h2 id="seccion3">Peso de la fuente</h2>
         <p>La propiedad <q><em>font-weight</em></q> le permite crear texto en negrita. Hay dos valores que esta propiedad suele tomar:</p>
         <h3>Normal</h3>
         <p>Este valor hace que el texto aparezca normal.</p>
@@ -94,7 +116,7 @@
     </div>
     
     <div class="fuente">
-        <h2>Estilo de la fuente</h2>
+        <h2 id="seccion4">Estilo de la fuente</h2>
         <p>Si desea crear texto en cursiva, puede utilizar la propiedad font-style. <br> Hay tres valores que puede tomar esta propiedad:</p>
         <h3>Normal</h3>
         <p>Este valor hace que el texto aparezca normal.</p>
@@ -105,7 +127,7 @@
     </div>
 
     <div class="fuente">
-        <h2>Mayúsculas y Minúsculas</h2>
+        <h2 id="seccion5">Mayúsculas y Minúsculas</h2>
         <p>En este caso se utiliza <q><em>text-transform</em></q></p>
         <h3>Uppercase</h3>
         <p>Este valor hace que el texto aparezca en mayúsculas.</p>
@@ -119,7 +141,7 @@
     </div>
 
     <div class="fuente">
-        <h2>Subrayado y Tachado</h2>
+        <h2 id="seccion6">Subrayado y Tachado</h2>
         <p>La propiedad <q><em>text-decoration</em></q> permite especificar los siguientes valores:</p>
         <h3>None</h3>
         <p>Este valor elimina cualquier decoración.</p>
@@ -136,16 +158,75 @@
     </div>
 
     <div class="fuente">
-        <h2>Interlineado</h2>
+        <h2 id="seccion7">Interlineado</h2>
         <p>La propiedad <q><em>line-height</em></q> determina el espacio vertical entre las lineas de texto</p>
         <p class="ejemplo-line-height">El espacio vertical entre las líneas debe ser mayor que el espacio entre cada palabra, 
         ya que esto ayuda a que el ojo se mueva a lo largo de la línea en lugar de hacia abajo. 
         Un buen ajuste inicial es de alrededor de 1,4 a 1,5 em. </p>
         <p>El texto escrito recientemente fue escrito con un line-height de 1,4em</p>
 
-        <h2>Espaciado entre letras y palabras</h2>
+        <h2 id="seccion8">Espaciado entre letras y palabras</h2>
         <p><em><q>letter-spacing y word-spacing</q></em> dada sus definiciones, se utilizan para dar espacio entre las letras de las palabras y el espacio entre palabras.</p>
+        <p>El espacio predeterminado entre las palabras lo establece el tipo de letra (a menudo alrededor de 0,25 em), y es poco probable que necesite cambiar esta propiedad con regularidad. 
+            Si el tipo de letra está en negrita o ha aumentado el espacio entre las letras,
+            entonces un espacio más grande entre las palabras puede aumentar la legibilidad</p>
+
+        <h2 id="seccion9">Alineación</h2>
+        <p class="prueba-align-center">La propiedad <q><em>text-align</em></q> permite alinear el texto a la izquierda, derecha, centrado o justificado.</p>
+        <h3>Atributos para el <q>text-align</q></h3>
+        <p><strong>left:</strong> Alinea el texto a la izquierda.</p>
+        <p><strong>right: </strong>Alinea el texto a la derecha.</p>
+        <p><strong>center:</strong> Alinea el texto al centro.</p>
+        <p><strong>justify: </strong>Justifica el texto.</p>
+
+        <h2 id="seccion10">Alineación Vertical</h2>
+        <p>El <q><em>vertical-align</em></q>se usa más comúnmente con elementos en línea como < img>, < em>o < strong> elementos. </p>
+        <strong>Valores que puede tomar:</strong>
+        <div class="words-values">
+        <p>baseline
+        <br> subb
+        <br>super
+        <br> top
+        <br> text-top
+        <br>middle
+        <br>bottom
+        <br> text-bottom</p>
+        </div>
+
+        <h2 id="seccion11">Sangría de Texto</h2>
+        <p>La propiedad <q><em>text-indent</em></q> permite aplicar sangría a la primera línea de texto dentro de un elemento. 
+            La cantidad por la que desea sangrar la línea se puede especificar de varias maneras, pero generalmente se da en píxeles o ems. </p>
     </div>
 
+    <h2 id="seccion12">Sombreado</h2>
+    <p>La propiedad <q><em>text-shadow</em></q></p>
+    <p>Se utiliza para crear una sombra paralela, que es una versión oscura de la palabra justo detrás de ella y ligeramente desplazada. También se puede utilizar
+    para crear un efecto de relieve añadiendo una sombra ligeramente más clara que el texto.</p>
+
+    <h2 id="seccion13">Primera letra o línea</h2>
+    <p class="firstL">Puede especificar valores diferentes para la primera letra o la primera línea de texto dentro de un elemento mediante :first-letter y :first-line.</p>
+    
+    <h2 id="seccion14">Link con estilos</h2>
+    <p>Los navegadores tienden a mostrar los enlaces en azul con un subrayado de forma predeterminada,
+        y cambiarán el color de los enlaces que se han visitado para ayudar a los usuarios a saber en qué páginas han estado.</p>
+    <h3>:link</h3>
+    <p>Esto le permite establecer estilos para los enlaces que aún no se han visitado.</p>
+    <h3>:visited</h3>
+    <p>Esto le permite establecer estilos para los enlaces en los que se ha hecho clic. Se utilizan comúnmente para controlar los colores de los enlaces y también si deben aparecer subrayados o no.</p>
+    
+    <h2>Estilos interactivos con el Usuario</h2>
+    <p>Hay tres pseudoclases que permiten cambiar la apariencia de los elementos cuando un usuario interactúa con ellos.</p>
+    <h3>:hover</h3>
+    <p>Esto se aplica cuando un usuario mantiene el puntero sobre un elemento con un dispositivo señalador, como un mouse. <br>No funciona con dispositivos con pantalals táctiles</p>
+    <h3>:active</h3>
+    <p>Esto se aplica cuando un elemento está siendo activado por un usuario; por ejemplo, cuando se presiona un botón o se hace clic en un vínculo. A veces, esto se usa para hacer que
+        un botón o enlace se sienta más como si se estuviera presionando cambiando ligeramente el estilo o la posición del elemento</p>
+    <h3>:focus</h3>
+    <p>Esto se aplica cuando un elemento tiene el foco. Cualquier elemento con el que pueda interactuar, como un vínculo en el que pueda hacer clic o cualquier control de 
+        formulario, puede tener el foco.</p>
+    <p>
+        Por ejemplo, cuando el cursor está en una entrada de formulario lista para aceptar la escritura, se dice que ese elemento tiene el foco. También es posible utilizar
+        la tecla de tabulación del teclado para desplazarse por los elementos interactivos de una página. 
+    </p>
 </body>
 </html>

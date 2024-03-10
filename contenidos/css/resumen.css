@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(219, 219, 219);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1 {
+    color: DarkCyan;
+    font-family: Georgia, Verdana, monospace;
+    text-align: center;
+}
+h2 {
+    color: #810650;
+    opacity: 1;
+    font-family: Georgia, Verdana, serif;
+    text-align: center;
+}

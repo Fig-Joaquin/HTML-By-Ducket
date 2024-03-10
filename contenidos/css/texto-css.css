@@ -1,13 +1,16 @@
 h1 {
     color: DarkCyan;
     font-family: Georgia, Verdana, monospace;
+    text-align: center;
 }
 
 h2 {
     color: #ee3e80;
     opacity: 1;
     font-family: Georgia, Verdana, serif;
+   
 }
+
 
 body{background-color: rgb(196, 196, 196);}
 
@@ -123,4 +126,42 @@ body{background-color: rgb(196, 196, 196);}
 }
 .ejemplo-line-height{
     line-height: 1.4;
+}
+
+.prueba-align-center{
+    text-align: left;
+}
+
+.words-values{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.div-tabla-indice{
+    display: flex;
+}
+
+.ol-tabla-indice{
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.li-tabla-indice{
+        a:link {
+        color: rgb(82, 82, 209);
+        text-decoration: none;}
+        a:visited {
+        color: rgb(0, 0, 0);}
+        a:hover {
+        color: rgb(43, 106, 141);
+        text-decoration: underline;}
+        a:active {
+        color: rgb(14, 17, 17);}
+}
+
+.firstL:first-letter{
+    font-weight: bold !important;
+    font-size: 120%;
 }
