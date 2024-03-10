@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/intro-css.css" type="text/css">
+</head>
+<body>
+    
+    <h1>Introducción al CSS</h1>
+    <h3>En esta sección, veremos cómo hacer que tus páginas web sean más atractivas, controlando el diseño de las mismas mediante CSS.</h3>
+    <p>CSS le permite crear reglas que especifican cómo debe aparecer el contenido de un elemento. Por ejemplo, puede especificar que el fondo de la página sea crema, 
+        que todos los párrafos aparezcan en gris con el tipo de letra Arial o que todos los encabezados de nivel uno estén en azul, cursiva, tipo de letra Times.</p>
+    <h3>Entendiendo el css</h3>
+    <p>La clave para entender cómo funciona CSS es imaginar que hay un cuadro invisible alrededor de cada elemento HTML.</p>
+    <h4>Bloques y elementos en linea</h4>
+    Los elementos de nivel de bloque parecen comenzar en una nueva línea. Algunos ejemplos son los <br> < h1>< h6> , < p> y < div> . <br>
+        Los elementos en línea fluyen dentro del texto y no comienzan en una nueva línea. Algunos ejemplos son: <br> < b>, < i>, < img>< em> y < span>.
+    <h3>Ejemplos de estilos</h3>
+    <h4>Boxes</h4>
+    <p>Anchura y altura Bordes (color, anchura y estilo) Color de fondo e imágenes Posición en la ventana del navegador.</p>
+    <h4>Texto</h4>
+    <p>Tamaño de la tipografía Color Cursiva, negrita, mayúsculas, minúsculas, versalitas</p>
+    <h4>Específico</h4>
+    <p>También hay formas específicas en las que puede aplicar estilo a ciertos elementos, como listas, tablas y formularios.</p> <br>
+    <strong>CSS asocia reglas de estilo con elementos HTML</strong>
+    <p>CSS funciona asociando reglas con elementos HTML. Estas reglas rigen cómo se debe mostrar el contenido de los elementos especificados. 
+        Una regla CSS contiene dos partes: un selector y una declaración.</p>
+    <h2>Partiendo con CSS</h2>
+    <p>Hay tres formas de aplicar CSS a un documento HTML: CSS externo, CSS interno.</p>
+    <strong>CSS Interno</strong>
+    <p>Se usa dentro de la misma página del HTML</p>
+    <strong>CSS Externo</strong>
+    <p>Se usa en un archivo externo al CSS
+    
+    <h4>Elemento</h4>
+    <h5>< link ></h5>
+    <p>El <link> elemento se puede usar en un documento HTML para decirle al navegador dónde encontrar el archivo CSS utilizado para dar estilo a la 
+        página. Es un elemento vacío (lo que significa que no necesita una etiqueta de cierre) y vive dentro del < head> elemento. Debe usar tres atributos:</p>
+    <h5>href</h5>
+    <p>Esto especifica la ruta al archivo CSS (que a menudo se coloca en una carpeta llamada css o estilos).</p>
+    <h5>type</h5>
+    <p>Este atributo especifica el tipo de documento al que se va a vincular. El valor debe ser text/css</p>
+    <h5>rel</h5>
+    <p>Esto especifica la relación entre la página HTML y el archivo al que está vinculada. El valor debe ser la hoja de estilo cuando se vincula a un archivo CSS.
+        Una página HTML puede usar más de una hoja de estilo CSS. Para ello, podría tener un < link> elemento para cada archivo CSS que utilice. Por ejemplo, algunos autores utilizan un archivo CSS para controlar la presentación (como fuentes y colores) y un segundo para controlar el diseño</p>
+    </body>
+</html>
