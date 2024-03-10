@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto</title>
+    <link rel="stylesheet" href="css/texto-css.css">
+</head>
+<body>
+    <h1>Texto en el CSS</h1>
+    <h2>Tipografías</h2>
+    <div class="tipo-serif">
+        <p>Fuente Serif</p>
+    </div>
+    <div class="tipo-sans-serif">
+        <p>Fuente Sans-Serif</p>
+    </div>
+    <div class="tipo-monospace">
+        <p>Fuente Monospace</p>
+    </div>
+    <div class="tipo-cursiva"><p>Fuente Cursiva</p></div>
+    <div class="tipo-fantasia"><p>Fuente Fantasía</p></div>
+    <br>
+    <div>
+        <Strong>Ejemplos de Serif:</Strong>
+        <div class="tipo-georgia">
+            <p>Georgia</p>
+        </div>
+        <div class="tipo-times">
+            <p>Times</p>
+        </div>
+        <div class="tipo-times-new-roman">
+            <p>Times New Roman</p>
+        </div>
+    </div>
+    <br>
+    <div>
+        <Strong>Ejemplos de Sans-Serif:</Strong>
+        <div class="tipo-arial">
+            <p>Arial</p>
+        </div>
+        <div class="tipo-verdana">
+            <p>Verdana</p>
+        </div>
+        <div class="tipo-helvetica">
+            <p>Helvetica</p>
+        </div>
+    </div>
+    <br>
+    <div>
+        <Strong>Ejemplos de Monospace:</Strong>
+        <div class="tipo-courier">
+            <p>Courier</p>
+        </div>
+        <div class="tipo-courier-new">
+            <p>Courier New</p>
+        </div>
+        <div class="tipo-lucida">
+            <p>Lucida</p>
+        </div>
+    </div>
+    <br>
+    <div><strong>Ejemplos de Cursiva:</strong>
+    <div class="tipo-comic">
+        <p>Comic Sans MS</p>
+    </div>
+    <div class="tipo-monotype">
+        <p>Monotype Cursiva</p>
+    </div>
+
+    <h2>Tamaños del tipo de fuente</h2>
+
+    <div class="fuente">
+        <p>La propiedad font-size permite especificar un tamaño para la fuente. <br> 
+            Hay varias formas de especificar el tamaño de una fuente. <p><em>Los más comunes son: </em> </p> 
+        </p>
+        <p><strong>Pixeles</strong></p>
+        <p>Los píxeles se usan comúnmente porque permiten a los diseñadores web un control muy preciso sobre la cantidad de espacio que ocupa su texto. <br> El número de píxeles va seguido de las letras px.</p>
+        <p><strong>Porcentajes</strong></p>
+        <p>El tamaño predeterminado es de <em>16px</em>  </p>
+        <p><Strong>Em</Strong></p>
+        <p>Ems le permite cambiar el tamaño del texto en relación con el tamaño del texto en el elemento principal.</p>
+    </div>
+
+    <div class="fuente">
+        <h2>Peso de la fuente</h2>
+        <p>La propiedad <q><em>font-weight</em></q> le permite crear texto en negrita. Hay dos valores que esta propiedad suele tomar:</p>
+        <h3>Normal</h3>
+        <p>Este valor hace que el texto aparezca normal.</p>
+        <p class="ejemplo-normal">Este es un ejemplo</p>
+        <h3>Bold</h3>
+        <p>Este valor hace que el texto aparezca en negrita.</p>
+        <p class="ejemplo-bold">Este es un ejemplo</p>
+    </div>
+    
+    <div class="fuente">
+        <h2>Estilo de la fuente</h2>
+        <p>Si desea crear texto en cursiva, puede utilizar la propiedad font-style. <br> Hay tres valores que puede tomar esta propiedad:</p>
+        <h3>Normal</h3>
+        <p>Este valor hace que el texto aparezca normal.</p>
+        <p class="ejemplo-normal-fuente">Este es un ejemplo</p>
+        <h3>Italic</h3>
+        <p>Este valor hace que el texto aparezca en cursiva.</p>
+        <p class="ejemplo-italic">Este es un ejemplo </p>
+    </div>
+
+    <div class="fuente">
+        <h2>Mayúsculas y Minúsculas</h2>
+        <p>En este caso se utiliza <q><em>text-transform</em></q></p>
+        <h3>Uppercase</h3>
+        <p>Este valor hace que el texto aparezca en mayúsculas.</p>
+        <p class="ejemplo-uppercase">Este es un ejemplo</p>
+        <h3>Lowercase</h3>
+        <p>Este valor hace que el texto aparezca en minúsculas.</p>
+        <p class="ejemplo-lowercase">Este es un ejemplo</p>
+        <h3>Capitalize</h3>
+        <p>Este valor hace que la primera letra de cada palabra aparezca en mayúsculas.</p>
+        <p class="ejemplo-capitalize">Este es un ejemplo</p>
+    </div>
+
+    <div class="fuente">
+        <h2>Subrayado y Tachado</h2>
+        <p>La propiedad <q><em>text-decoration</em></q> permite especificar los siguientes valores:</p>
+        <h3>None</h3>
+        <p>Este valor elimina cualquier decoración.</p>
+        <p class="ejemplo-none" class="ejemplos">Este es un ejemplo</p>
+        <h3>Underline</h3>
+        <p>Este valor agrega una línea debajo del texto.</p>
+        <p class="ejemplo-underline">Este es un ejemplo</p>
+        <h3>Line-through</h3>
+        <p>Este valor agrega una línea a través del texto.</p>
+        <p class="ejemplo-line-through">Este es un ejemplo</p>
+        <h3>Overline</h3>
+        <p>Este valor agrega una línea sobre el texto.</p>
+        <p class="ejemplo-overline">Este es un ejemplo</p>
+    </div>
+
+    <div class="fuente">
+        <h2>Interlineado</h2>
+        <p>La propiedad <q><em>line-height</em></q> determina el espacio vertical entre las lineas de texto</p>
+        <p class="ejemplo-line-height">El espacio vertical entre las líneas debe ser mayor que el espacio entre cada palabra, 
+        ya que esto ayuda a que el ojo se mueva a lo largo de la línea en lugar de hacia abajo. 
+        Un buen ajuste inicial es de alrededor de 1,4 a 1,5 em. </p>
+        <p>El texto escrito recientemente fue escrito con un line-height de 1,4em</p>
+
+        <h2>Espaciado entre letras y palabras</h2>
+        <p><em><q>letter-spacing y word-spacing</q></em> dada sus definiciones, se utilizan para dar espacio entre las letras de las palabras y el espacio entre palabras.</p>
+    </div>
+
+</body>
+</html>

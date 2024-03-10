@@ -1,12 +1,15 @@
 /* color name */
 h1 {
-    color: DarkCyan;}
+    color: DarkCyan;
+    font-family: Arial, Verdana, sans-serif;}
     /* hex code */
-    h2 {
+h2 {
     color: #ee3e80;
-    opacity: 1;}
+    opacity: 1;
+    font-family: Arial, Verdana, sans-serif;}
     /* rgb value */
-    p {
-    color: rgb(100,100,90);}
+p {
+    color: rgb(30, 30, 30);}
 body {
-    background-color: #d3cfcf;}
+    background-color: #d3cfcf;
+    font-family: Georgia, Times, serif;}

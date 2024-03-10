@@ -1,0 +1,126 @@
+h1 {
+    color: DarkCyan;
+    font-family: Georgia, Verdana, monospace;
+}
+
+h2 {
+    color: #ee3e80;
+    opacity: 1;
+    font-family: Georgia, Verdana, serif;
+}
+
+body{background-color: rgb(196, 196, 196);}
+
+.tipo-serif {
+    font-family: serif;
+}
+.tipo-cursiva {
+    font-family: cursive;
+}
+
+.tipo-fantasia {
+    font-family: fantasy;
+}
+
+.tipo-sans-serif {
+    font-family:  sans-serif;
+}
+
+.tipo-monospace {
+    font-family:  monospace;
+}
+
+.tipo-georgia {
+    font-family: Georgia, serif;
+}
+.tipo-times {
+    font-family: Times, serif;
+}
+.tipo-times-new-roman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tipo-arial {
+    font-family: Arial, sans-serif;
+}
+.tipo-verdana {
+    font-family: Verdana, sans-serif;
+}
+.tipo-helvetica {
+    font-family: Helvetica, sans-serif;
+}
+
+.tipo-courier {
+    font-family: Courier, monospace;
+}
+
+.tipo-courier-new {
+    font-family: 'Courier New', monospace;
+}
+
+.tipo-lucida {
+    font-family: 'Lucida Console', monospace;
+}
+
+.tipo-comic {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.tipo-monotype {
+    font-family: 'Monotype Corsiva', cursive;
+}
+
+
+.fuente {
+    font-family: 'Arial', sans-serif;
+}
+
+.ejemplo-normal {
+    font-weight: normal;
+}
+
+.ejemplo-bold {
+    font-weight: bold;
+}
+
+.ejemplo-normal-fuente
+{
+    font-style: normal;
+}
+.ejemplo-italic
+{
+    font-style: italic;
+}
+.ejemplo-uppercase
+{
+    text-transform: uppercase;
+}
+
+.ejemplo-lowercase
+{
+    text-transform: lowercase;
+}
+
+.ejemplo-capitalize
+{
+    text-transform: capitalize;
+}
+
+.ejemplo-none{
+    text-decoration: none;
+}
+.ejemplo-underline{
+    text-decoration: underline;
+}
+.ejemplo-line-through{
+    text-decoration: line-through;
+}
+.ejemplo-overline{
+    text-decoration: overline;
+}
+.ejemplo-blink{
+    text-decoration: blink;
+}
+.ejemplo-line-height{
+    line-height: 1.4;
+}
