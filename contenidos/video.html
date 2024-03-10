@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video y audio</title>
+</head>
+<body>
+    <h1>Video</h1>
+    <p>El < video > elemento tiene una serie de atributos que le permiten controlar la reproducción de vídeo:</p>
+    <h2>Atributos de video</h2>
+    <h3>src</h3>
+    <p>Este atributo especifica la ruta de acceso al vídeo. (El video de ejemplo está en formato H264, por lo que solo funcionará en IE y Safari).</p>
+    <h3>poster</h3>
+    <p>Este atributo le permite especificar una imagen para que se muestre mientras se descarga el vídeo o hasta que el usuario le indique al vídeo que se reproduzca.</p>
+    <h3>width, height</h3>
+    <p>Estos atributos especifican el tamaño del reproductor en píxeles.</p>
+    <h3>controls</h3>
+    <p>Cuando se utiliza, este atributo indica que el explorador debe proporcionar sus propios controles para la reproducción.</p>
+    <h3>autoplay</h3>
+    <p>Cuando se utiliza, este atributo especifica que el archivo debe reproducirse automáticamente.</p>
+    <h3>loop</h3>
+    <p>Cuando se utiliza, este atributo indica que el vídeo debe comenzar a reproducirse de nuevo una vez que haya finalizado.</p>
+    <h3>prelaod</h3>
+    <p>Este atributo le dice al navegador qué hacer cuando se carga la página. Puede tener uno de estos tres valores:</p>
+    <h3>none</h3>
+    <p>El navegador no debe cargar el vídeo hasta que el usuario pulse reproducir.</p>
+    <h3>auto</h3>
+    <p>El navegador debería descargar el video cuando se cargue la página.</p>
+    <h3>metadata</h3>
+    <p>El navegador solo debe recopilar información como el tamaño, el primer fotograma, la lista de pistas y la duración.</p>
+    <h3>type</h3>
+    <p>Debes usar este atributo para decirle al navegador qué formato tiene el video. De lo contrario, 
+        descargará parte del video para ver si puede reproducir el archivo (lo que llevará tiempo y ancho de banda).</p>
+        <p>dentro de type también va el <em>Codec</em>, se refleja con un punto y coma</p>
+    <h2>Ejemplo</h2>
+        <video 
+        width="520" height="360" 
+        controls 
+        alt="video" 
+        preload 
+        poster="images/gta6-trailer.jpg"
+        none
+        metadata
+        type="video/mp4; avc1.42E01E, mp4a.40.2"
+        >
+            <!-- Reemplaza "rutadelvideo.mp4" con la ruta de tu archivo de video convertido -->
+            <source src="videos/gta6-trailer.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+</body>
+</html>

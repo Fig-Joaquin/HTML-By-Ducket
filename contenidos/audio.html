@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Audio</h1>
+    <h2>< audio ></h2>
+    <p>El < audio > elemento tiene una serie de atributos que le permiten controlar la reproducción de audio:</p>
+    <h3>src</h3>
+    <p>Este atributo especifica la ruta de acceso al archivo de audio.</p>
+    <h3>controls</h3>
+    <p>Este atributo indica si el reproductor debe mostrar los controles. Si no utiliza este atributo,
+        no se mostrará ningún control de forma predeterminada. También puede especificar sus propios controles mediante JavaScript.</p>
+    <h3>autoplay</h3>
+    <p>La presencia de este atributo indica que el audio debe comenzar a reproducirse automáticamente. 
+        (Se considera una mejor práctica permitir que los visitantes elijan reproducir audio).</p>
+    <h3>preload</h3>
+    <p>Este atributo indica lo que debe hacer el navegador si el reproductor no está configurado para la reproducción automática. 
+        Puede tener los mismos valores que vimos en la página 214 para el < video> elemento.</p>
+    <h3>loop</h3>
+    <p>Este atributo especifica que la pista de audio debe reproducirse de nuevo una vez que haya finalizado. </p>
+    <h2>Multiples fuentes de una cancións</h2>
+    <h3>< source ></h3>
+    <p>Es posible especificar más de un archivo de audio utilizando el < source> elemento entre las etiquetas de apertura < audio> y cierre </> (en lugar del atributo src en la etiqueta de apertura < audio> ).
+        Esto es importante porque los diferentes navegadores admiten diferentes formatos para los archivos de audio.</p>
+    <h3>type</h3>
+    <p>En el momento s
+    <div>
+        <audio controls>
+            <source src="audio/song.mp3" type="audio/mp3">
+            <source src="audio/cancion.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+</body>
+</html>

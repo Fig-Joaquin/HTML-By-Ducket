@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información</title>
+</head>
+<body>
+    <h1>Información</h1>
+    <h2>< meta ></h2>
+    <p>El elemento <strong>meta</strong> nos permite agregar información sobre la página web. 
+        Esta información no se muestra en la página web, No es visible para los usuarios, pero cumple una serie de propósitos, 
+        como informar a los motores de búsqueda sobre su página, 
+        quién la creó y si es sensible al tiempo o no. (Si la página es sensible al tiempo, se puede configurar para que caduque).</p>
+    <h3>Elementos que se utilizan en < meta ></h3>
+    <h4>description</h4>
+    <p>Contiene una descripción de la página. Esta descripción es comúnmente utilizada por los motores de búsqueda para comprender de qué se trata la página y debe tener un máximo de 155 caracteres.
+        A veces también se muestra en los resultados de los motores de búsqueda</p>
+    <h4>keywords</h4>
+    <p>Contiene una lista de palabras separadas por comas en las que un usuario puede buscar para encontrar la página. En la práctica, 
+        esto ya no tiene ningún efecto notable en la forma en que los motores de búsqueda indexan su sitio.</p>  
+    <h4>robots</h4>
+    <p>Esto indica si los motores de búsqueda deben agregar esta página a sus resultados de búsqueda o no. Se puede usar un valor de noindex si no se debe agregar esta página. 
+        Se puede usar un valor de nofollow si los motores de búsqueda deben agregar esta página en sus resultados, pero no las páginas a las que se vincula.</p>
+    <h3>Uso del http-equiv en meta </h3>
+    <p>El < meta> elemento también utiliza los atributos http-equiv y content en pares. En nuestro ejemplo, 
+        puede ver tres instancias del atributo httpequit. Cada uno tiene un propósito diferente:</p>
+    <h4>author</h4>
+    <p>Esto define el autor de la página web</p>
+    <h4>pragma</h4>
+    <p>Esto evita que el navegador almacene en caché la página. (Es decir, almacenarlo localmente para ahorrar tiempo descargándolo en visitas posteriores).</p>
+    <h4>expires</h4>
+    <p>Debido a que los navegadores a menudo almacenan en caché el contenido de una página, la opción expires se puede usar para indicar cuándo debe caducar la página 
+        (y ya no debe almacenarse en caché). Tenga en cuenta que la fecha debe especificarse en el formato que se muestra.</p>
+
+    <!-- ======================================================================================================== -->
+    <!-- ejemplo -->
+    <!-- 
+        <head>
+    <title>Information About Your Pages</title>
+    <meta name="description" 
+    content="An Essay on Installation Art" />
+    <meta name="keywords" 
+    content="installation, art, opinion" />
+    <meta name="robots" 
+    content="nofollow" />
+    <meta http-equiv="author" 
+    content="Jon Duckett" />
+    <meta http-equiv="pragma" 
+    content="no-cache" />
+    <meta http-equiv="expires" 
+    content="Fri, 04 Apr 2014 23:59:59 GMT" />
+    </head>
+    -->
+    <h3>Signos</h3>
+    <img src="images/signos.png" alt="signos de escritura">
+</body>
+</html>
