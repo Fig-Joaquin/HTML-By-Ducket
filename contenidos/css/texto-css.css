@@ -165,3 +165,34 @@ body{background-color: rgb(196, 196, 196);}
     font-weight: bold !important;
     font-size: 120%;
 }
+
+.ejemplo-input {
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    background-color: #000100; /* Color de fondo inicial */
+    color: #fff; /* Color de texto inicial */
+    border: 2px solid #020403; /* Color del borde inicial */
+    cursor: pointer;
+}
+
+/* Efecto hover para el input */
+.ejemplo-input:hover {
+    background-color: #c0c3df; /* Color de fondo al hacer hover */
+    color: blue; /* Color de texto al hacer hover */
+    border-color: blue; /* Color del borde al hacer hover */
+}
+
+/* Efecto active para el input */
+.ejemplo-input:active {
+    background-color: yellow; /* Restaura el color de fondo cuando está activo (clicado) */
+    color: #000000; /* Restaura el color de texto cuando está activo */
+    border-color: yellow; /* Restaura el color del borde cuando está activo */
+}
+
+/* Efecto focus para el input */
+.ejemplo-input:focus {
+    outline: none; /* Elimina el contorno predeterminado del foco */
+    border-color: red; /* Cambia el color del borde cuando está enfocado */
+    box-shadow: 0 0 5px red; /* Agrega una sombra cuando está enfocado */
+}
