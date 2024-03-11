@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores</title>
+    <link rel="stylesheet" href="css/contenedor.css">
+</head>
+
+<body>
+    <h1>Contenedores</h1>
+    <div class="dropdown">
+        <button>Contenidos</button>
+        <div class="dropdown-content">
+            <a href="#s1">Dimensiones de la caja</a>
+            <a href="#s2">Limitación de la Altura</a>
+            <a href="#s3">Contenido desbordante</a>
+            <a href="#s4">Borde, margen y relleno</a>
+            <a href="#s5">Espacio en blanco y margen vertical</a>
+            <a href="#s6">Padding</a>
+            <a href="#s7">Margin</a>
+            <a href="#s8">Centrado de contenido</a>
+            <a href="#s9">Display</a>
+            <a href="#s10">Bordes de las Imagenes</a>
+            <a href="#s11">Sombra de los Contenedores</a>
+            <a href="#s12">Bordes Redondeados</a>
+        </div>
+    </div>
+
+    <div class="boton">
+            <a href="/resumen.html">
+                <button type="button">Home</button>
+            </a>
+    </div>
+
+    <p style="font-weight: bold;">El CSS trata cada elemento HTML como si viviera en su propia caja</p>
+    
+    <div>
+        <img src="images/border.png" alt="Imagen ejemplo box" width="350" height="260">
+    </div>
+    
+    <div>
+    <p>Se pueden establecer varias propiedades que afecten a la apariencia de estos cuadros.</p>
+    <p>Estas propiedades incluyen:</p>
+    <ul>
+        <li> Controlar las dimensiones de tus cajas</li>
+        <li>Crear bordes alrededor de las cajas</li>
+        <li> Establecer márgenes y relleno para las cajas </li>
+        <li>Mostrar y ocultar cajas</li>
+        <li>Imagen de fondo</li>
+        <li>Posicion en la pantalla</li>
+    </div>
+    
+    <h2 id="s1">Dimensiones de la caja</h2>
+    <p>Las dimensiones de las cajas se pueden controlar con las propiedades de <q>width</q> y <q>height</q>  en CSS.</p>
+    <strong>Ejemplo de una caja:</strong>
+
+    <div>
+        <div class="ej-dim-caja">
+        <p>Contenido de la caja</p>
+        </div>
+        <p>
+            Las formas más populares de especificar el tamaño de un cuadro son usar píxeles, porcentajes o ems. Tradicionalmente, 
+        los píxeles han sido el método más popular porque permiten a los diseñadores controlar con precisión su tamaño.
+        </p>
+
+        <p>
+            Cuando se utilizan porcentajes, el tamaño del cuadro es relativo al tamaño de la ventana del explorador o, 
+            si el cuadro está encerrado dentro de otro cuadro, es un porcentaje del tamaño del cuadro contenedor.
+        </p>
+
+        <p>
+            Cuando se utiliza ems, el tamaño del cuadro se basa en el tamaño del texto que contiene. Recientemente, los diseñadores han comenzado a 
+            usar porcentajes y ems más para las mediciones, ya que intentan crear diseños que sean flexibles en dispositivos que tienen pantallas de diferentes tamaños.
+        </p>
+    </div>
+    <div>
+        <h2 id="s2">Limitación de la Altura</h2>
+        <p>
+            De la misma manera que es posible que desee limitar el ancho de un cuadro en una página, también puede limitar la altura del mismo.
+            Esto se logra utilizando las propiedades <q>min-height</q>  y <q> max-height</q> .
+        </p>
+        <p>Si la caja no es lo suficientemente grande para contener el contenido, y el contenido se expande fuera de la caja, puede verse muy desordenado.
+            Para controlar lo que sucede cuando no hay suficiente espacio para el contenido de un cuadro, puede usar la propiedad overflow.</p>
+    </div>
+    <div>
+        <h2 id="s3">
+            Contenido desbordante
+        </h2>
+        <p>
+            La propiedad overflow le dice al explorador qué hacer si el contenido contenido dentro de un cuadro es más grande que el propio cuadro. 
+            Puede tener uno de estos dos valores:
+        </p>
+        <ul>
+            <li style="font-size: 18px; font-weight: bold;" >hidden</li>
+            <p>Esta propiedad simplemente oculta cualquier contenido adicional que no quepa en la caja.</p>
+            <li style="font-size: 18px; font-weight: bold;">scroll</li>
+            <p>Esta propiedad agrega una barra de desplazamiento al cuadro para que los usuarios puedan desplazarse para ver el contenido que falta.</p>
+        </ul>
+    </div>
+
+    <div>
+        <h2 id="s4">Borde, margen y relleno</h2>
+        <p>Si especifica una anchura para un cuadro, los bordes, el margen y el relleno se añaden a su anchura y altura.</p>
+        <h3>Border</h3>
+        <p>
+            Cada cuadro tiene un borde (incluso si no es visible o se especifica que tiene 0 píxeles de ancho).
+            El borde separa el borde de una caja de otra.
+        </p>
+        <h3>Margin</h3>
+        <p>
+            Los márgenes se sitúan fuera del borde de la frontera. Puede establecer la anchura de un margen 
+            para crear un espacio entre los bordes de dos cuadros adyacentes.
+        </p>
+        <h3>Padding</h3>
+        <p>
+            El relleno es el espacio entre el borde de un cuadro y cualquier contenido contenido dentro de él. 
+            Agregar relleno puede aumentar la legibilidad de su contenido.
+        </p>
+        <p> <strong style="color: #d6d185"> Margen </strong> <strong style="color: #974f18" > Border </strong> <strong style="color: rgb(236, 195, 191)"> Padding</strong></p>
+        <br>
+        <img width="120px" height="60px"  src="images/ejemplo-bmp.png" alt="ejemplo border-margin-padding">
+    </div>
+    <div>
+        <h2 id="s5">Espacio en blanco y margen vertical</h2>
+        <p>Las propiedades de relleno y margen son muy útiles para agregar espacio entre varios elementos de la página.</p>
+        <h3>border-width</h3>
+        <p>La propiedad border-width se utiliza para controlar el ancho de un borde. El valor de esta propiedad se puede dar 
+            en píxeles o utilizando uno de los siguientes valores:</p>
+        <ul>
+            <li>thin</li>
+            <li>medium</li>
+            <li>thick</li>
+        </ul>
+        <p>Estos valores son útiles cuando desea que los bordes de varias cajas tengan el mismo aspecto.</p>
+        <p>Puede controlar el tamaño individual de los bordes mediante cuatro propiedades independientes:</p>
+        <ul>
+            <li>border-top-width</li>
+            <li>border-right-width</li>
+            <li>border-bottom-width</li>
+            <li>border-left-width</li>
+        </ul>
+
+        <h3>border-style</h3>
+        <p>Puede controlar el estilo de un borde mediante la propiedad border-style. 
+        Esta propiedad puede tomar los siguientes valores:</p>
+        <ul>
+            <li>solid</li>
+            <li>dotted</li>
+            <li>dashed</li>
+            <li>double</li>
+            <li>groove</li>
+            <li>ridge</li>
+            <li>inset</li>
+            <li>outset</li>
+        </ul>
+
+        <strong>Ejemplo:</strong>
+        <p class="one">Prueba 1 del borde</p>
+        <p class="two">Prueba 2 del borde</p>
+        <p class="three">Prueba 3 del borde</p>
+        <p class="four">Prueba 4 del borde</p>
+        <p class="five">Prueba 5 del borde</p>
+        <p class="six">Prueba 6 del borde</p>
+        <p class="seven">Prueba 7 del borde</p>
+        <p class="eight">Prueba 8 del borde</p>
+
+        <h3>border-color</h3>
+        <p>La propiedad <q>border-color</q> puede especificar el color de un borde utilizando valores RGB, códigos hexadecimales o nombres de color CSS.</p>
+        <p>Es posible controlar individualmente los colores de los bordes en los diferentes lados de una caja usando:</p>
+        <ul>
+            <li>border-top-color</li>
+            <li>border-right-color</li>
+            <li>border-bottom-color</li>
+            <li>border-left-color</li>
+        </ul>
+        <h3>border</h3>
+        <p>La propiedad <q>border</q> le permite especificar el ancho, el estilo y el color de un borde en una propiedad 
+            (y los valores deben codificarse en ese orden específico).</p>
+        <p class="color-one">Prueba de color de los bordes</p>
+    </div>
+    <div>
+        <h2 id="s6">Padding</h2>
+        <p>La propiedad <q>padding</q> le permite especificar cuánto espacio debe haber entre el contenido de un elemento y su borde.</p>
+        <p>El valor de esta propiedad se especifica con mayor frecuencia en píxeles (aunque también es posible usar porcentajes o ems). \
+            Si se utiliza un porcentaje, el relleno es un porcentaje de la ventana del navegador (o del cuadro contenedor si está dentro de otro cuadro). <br>
+            <br> Tenga en cuenta: Si se especifica un ancho para una caja, se agrega relleno al ancho de la caja.</p>
+            <p>Los elementos secundarios no heredan el valor de la propiedad padding de la misma manera que el valor de color de la propiedad font-family; 
+                Por lo tanto, debe especificar el relleno para cada elemento que necesite usarlo.</p>
+            <p class="ejemplo-pad2">Este es un ejemplo sin uso del padding</p>
+            <p class="ejemplo-pad">Este es un ejemplo del uso del padding</p>
+
+            <p>Puede especificar diferentes valores para cada lado de un cuadro mediante:</p>
+            <ul>
+                <li>padding-top</li>
+                <li>padding-right</li>
+                <li>padding-bottom</li>
+                <li>padding-left</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 id="s7">Margin</h2>
+            <p>La propiedad margin controla el espacio entre los cuadros. Su valor se da comúnmente en píxeles, aunque también puede usar porcentajes o ems.</p>
+            <p>Si una caja se encuentra encima de otra, los márgenes se contraen, lo que significa que se usará el mayor de los dos márgenes y 
+                no se tendrá en cuenta el más pequeño.</p>
+            <p>Tenga en cuenta: Si se especifica el ancho de un cuadro, el margen se agrega al ancho del cuadro.</p> 
+            <p class="ejemplo-marg">Este es un ejemplo del uso del margin <q style="padding: 100px;">centrado</q></p>
+        </div>
+
+        <div>
+            <h2 id="s8">Centrado de contenido</h2>
+            <p>Para centrar el contenido de un cuadro, debe establecer el ancho del cuadro y luego establecer el margen izquierdo y derecho en <q>auto</q>.</p>
+            <p>Para centrar un cuadro en la página, debe establecer un ancho para el cuadro (de lo contrario, ocupará todo el ancho de la página).</p>
+            <p>Una vez que haya especificado el ancho del cuadro, establecer los márgenes izquierdo y derecho en automático hará que el navegador 
+                coloque un espacio igual a cada lado del cuadro. Esto centra el cuadro en la página (o dentro del elemento en el que se encuentra el cuadro).</p>
+        </div>
+
+        <div>
+            <h2 id="s9">Display</h2>
+            <p>La propiedad display permite convertir un elemento en línea en un elemento de nivel de bloque o viceversa, y también se puede utilizar para ocultar un 
+                elemento de la página.</p>
+            <p>Los valores que puede tomar esta propiedad son:</p>
+            <ul>
+                <li style="font-size: 18px; font-weight: bold;" >inline</li>
+                <p>Esto hace que un elemento de nivel de bloque actúe como un elemento en línea.</p>
+                <li style="font-size: 18px; font-weight: bold;" >block</li>
+                <p>Esto hace que un elemento en línea actúe como un elemento de nivel de bloque.</p>
+                <li style="font-size: 18px; font-weight: bold;" >inline-block</li>
+                <p>Esto hace que un elemento de nivel de bloque fluya como un elemento en línea, al tiempo que conserva otras características de un elemento 
+                    de nivel de bloque.</p>
+                <li style="font-size: 18px; font-weight: bold;" >none</li>
+                <p>Esto oculta un elemento de la página. En este caso, el elemento actúa como si no estuviera en la página en absoluto.</p>
+                <ul class="ej-display">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li class="coming-soon">Services</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <h2 id="s10">Bordes de las Imagenes</h2>
+            <p>La propiedad <q>border-image</q> aplica una imagen al borde de cualquier cuadro. Toma una imagen de fondo y la corta en nueve pedazos.</p>
+            <p><strong>Posibles valores: </strong></p>
+            <ul>
+                <li class="listados">border-image-source</li>
+                <li class="listados">border-image-width</li>
+                <li class="listados">border-image-outset</li>
+                <li class="listados">border-image-repeat</li>
+                <li class="listados">border-image-slice</li>
+            </ul>
+
+            <h2 id="s11">Sombra de los Contenedores</h2>
+            <p>La propiedad box-shadow permite agregar una sombra paralela alrededor de una caja.
+                Debe usar al menos el primero de estos dos valores, así como un color:</p>
+            <ul>
+                <li class="listados">horizontal offset</li>
+                <p>Los valores negativos colocan la sombra a la izquierda del cuadro.</p>
+                <li class="listados">vertical offset</li>
+                <p>Los valores negativos colocan la sombra en la parte superior del cuadro.</p>
+                <li class="listados">blur distance</li>
+                <p>Si se omite, la sombra es una línea continua como un borde.</p>
+                <li class="listados">spread of shadow</li>
+                <p>Si se usa, un valor positivo hará que la sombra se expanda en todas las direcciones y un valor negativo hará que se contraiga. 
+                    La palabra clave inset también se puede usar antes de estos valores para crear una sombra interna.</p>
+            </ul>
+            <p class="ej-border-shadow" style="text-align: center;"> Ejemplo</p>
+        </div>
+        <div>
+            <h2 id="s12">Bordes Redondeados</h2>
+            <p>CSS3 introduce la capacidad de crear esquinas redondeadas en cualquier caja, utilizando una propiedad llamada <q>border-radius</q>. 
+                El valor indica el tamaño del radio en píxeles.</p>
+                <p>Puedes especificar valores individuales para cada esquina de un cuadro mediante:</p>
+                <ul>
+                    <li  class="listados">border-top-left-radius</li>
+                    <li  class="listados">border-top-right-radius</li>
+                    <li  class="listados">border-bottom-right-radius</li>
+                    <li  class="listados">border-bottom-left-radius</li>
+                </ul>
+                <p class="ej-rounded-border">Ejemplo</p>
+        </div>
+</body>
+</html>

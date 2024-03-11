@@ -14,3 +14,14 @@ h2 {
     font-family: Georgia, Verdana, serif;
     text-align: center;
 }
+
+a {
+    color: #3418a4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #246ff0;
+    text-decoration: none;
+}
+
